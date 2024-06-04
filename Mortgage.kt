@@ -1,3 +1,4 @@
+package com.example.project1
 
 import android.annotation.SuppressLint
 import android.util.Log
@@ -9,15 +10,13 @@ class Mortgage(years: Int, amount: Double, interestRate: Double) {
     private var amount: Double = 0.0
     private var interestRate: Double = 0.0
 
-    init {
-        Log.w("MainActivity", "Inside init")
-    }
 
     init {
 
         setYears(years)
         setAmount(amount)
         setInterestRate(interestRate)
+
     }
 
     fun getYears(): Int {
@@ -69,3 +68,4 @@ class Mortgage(years: Int, amount: Double, interestRate: Double) {
     }
 
 }
+
